@@ -1,0 +1,98 @@
+/* :: Default code starts Here */
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border:1px solid #ff0000; */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    font-family: 'Abel', sans-serif;
+}
+
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #FFC400;
+    --textDarkColor: #05243b;
+    --textLightColor: #fefefe;
+    --LightkColor: #ffffff;
+    --headingFont: 46px;
+    --subHeadingFont: 18px;
+    --paragraph: 16px;
+    --linkButton: 16px;
+}
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+/* :: Default code ends Here */
+main{
+    background-color: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);
+    color:var(--textDarkColor);
+    height:700px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+h1{
+    text-align: center;
+    font-size: var(--headingFont);
+    padding-bottom: 30px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width:90%;
+    height: auto;
+    padding-left: 25%;
+}
+
+
+textarea{
+    font-family: 'Abel', sans-serif;
+    font-size: var(--paragraph);
+    color:var(--textDarkColor);
+}
+
+button{
+    height: 40px;
+    width:200px;
+    border-radius: 5px;
+    margin-left:20px;
+    margin-right:20px;
+    padding:5px;
+    font-family: 'Abel', sans-serif;
+    font-size: var(--linkButton);
+    font-weight: bold;
+    background-color: linear-gradient(to right, #22b5e6 0%, #6eb0d6 51%, #27c9d4 100%);
+   border: 1px solid #05243b;
+    color: #e21717;
+} 
+
+@media screen and (max-width:900px) {
+    .content{
+        display: block;
+        padding-left:10%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .content{
+        display: block;
+        padding-left:2%;
+    }
+}
